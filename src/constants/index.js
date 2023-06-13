@@ -1,14 +1,14 @@
 export const marcas = [
     {
-        id: 1,
+        id: 'estandar',
         nombre: 'Estandar',
     },
     {
-        id: 2,
+        id: 'premium',
         nombre: 'Premium',
     },
     {
-        id: 3,
+        id: 'deportivo',
         nombre: 'Deportivo',
     }
 
