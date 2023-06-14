@@ -21,6 +21,7 @@ const CotizadorProvider = ({ children }) => {
 
     const [error, setError] = useState('')
     const [resultado, setResultado] = useState(0)
+    const [cargando, setCargando] = useState(false)
 
     const cotizaSeguro = () => {
         let resultado = 2000
@@ -37,7 +38,13 @@ const CotizadorProvider = ({ children }) => {
 
         formatearDolares(resultado)
 
-        setResultado(resultado)
+        setCargando(true)
+
+        setTimeout(() => {
+            setResultado(resultado)
+            setCargando(false)
+        }, 2000)
+
     }
 
     return (
@@ -48,6 +55,7 @@ const CotizadorProvider = ({ children }) => {
             setError,
             cotizaSeguro,
             resultado,
+            cargando
         }}>
             {children}
         </CotizadorContext.Provider>
