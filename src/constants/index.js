@@ -1,14 +1,14 @@
 export const marcas = [
     {
-        id: 'estandar',
+        id: 'Estandar',
         nombre: 'Estandar',
     },
     {
-        id: 'premium',
+        id: 'Premium',
         nombre: 'Premium',
     },
     {
-        id: 'deportivo',
+        id: 'Deportivo',
         nombre: 'Deportivo',
     }
 
@@ -19,11 +19,11 @@ export const years = Array.from(new Array(20), (x, i) => yearsmax - i);
 
 export const planes = [
     {
-        id: 1,
+        id: 'Basico',
         nombre: 'Básico'
     },
     {
-        id: 2,
+        id: 'Completo',
         nombre: 'Completo'
     }
 ]

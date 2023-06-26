@@ -1,6 +1,5 @@
 import useCotizador from "../hooks/useCotizador"
 
-
 const Resultado = () => {
     
     const { resultado, data } = useCotizador()
@@ -27,6 +26,15 @@ const Resultado = () => {
             {plan}
         </p>
 
+        <p className="my-2">
+            <span className="font-bold">Año: </span>
+            {year}
+        </p>
+
+        <p className="my-2 text-2xl">
+            <span className="font-bold">Total: </span>
+           $ {resultado}
+        </p>
 
     </div>
   )

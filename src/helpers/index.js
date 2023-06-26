@@ -26,7 +26,7 @@ export function calcularMarca(marca) {
 }
 
 export function obtenerPlan(plan) {
-    return (plan === 'basico') ? 1.2 : 1.5;
+    return (plan === 'Basico') ? 1.2 : 1.5;
 }
 
 export function formatearDolares(monto) {
